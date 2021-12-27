@@ -1,0 +1,10 @@
+ru\habrahabr\ui\MainController.class
+ru\habrahabr\ControllersConfiguration$ViewHolder.class
+ru\habrahabr\AbstractJavaFxApplicationSupport.class
+ru\habrahabr\entity\Contact.class
+ru\habrahabr\entity\ContactWithProperties.class
+ru\habrahabr\service\ContactServiceImpl.class
+ru\habrahabr\ControllersConfiguration.class
+ru\habrahabr\repository\ContactRepository.class
+ru\habrahabr\Application.class
+ru\habrahabr\service\ContactService.class

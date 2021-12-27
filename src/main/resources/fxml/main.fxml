@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.habrahabr.ui.MainController">
+   <children>
+      <TableView fx:id="table" editable="true" prefHeight="500.0" prefWidth="605.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY" /></columnResizePolicy>
+      </TableView>
+      <VBox alignment="CENTER" layoutX="21.0" layoutY="207.0" prefHeight="50.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <TextField fx:id="txtName" promptText="Имя">
+               <VBox.margin>
+                  <Insets right="3.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtPhone" promptText="Телефон">
+               <VBox.margin>
+                  <Insets right="3.0" />
+               </VBox.margin>
+            </TextField>
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#addContact" text="Добавить" />
+         </children>
+         <children>
+            <TextField fx:id="txtId" promptText="id контакта">
+               <VBox.margin>
+                  <Insets right="3.0" />
+               </VBox.margin>
+            </TextField>
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteContact" text="Удалить" />
+         </children>
+      </VBox>
+<!--      <HBox alignment="CENTER" layoutX="31.0" layoutY="280.0" prefHeight="20.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">-->
+<!--      <children>-->
+<!--            <TextField fx:id="txtId" promptText="id контакта">-->
+<!--               <HBox.margin>-->
+<!--                  <Insets right="3.0" />-->
+<!--               </HBox.margin>-->
+<!--            </TextField>-->
+<!--            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteContact" text="Удалить" />-->
+<!--         </children>-->
+<!--      </HBox>-->
+   </children>
+</AnchorPane>
